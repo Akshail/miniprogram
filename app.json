@@ -1,0 +1,29 @@
+{
+  "pages": [  
+
+    "pages/index/index", 
+    "pages/menu/index",
+    "pages/cart/cart",
+    "pages/cpu/index",
+    "pages/board/index",
+    "pages/memory/index",
+    "pages/gpu/index",
+    "pages/ssd/index",
+    "pages/disk/index",
+    "pages/fan/index",
+    "pages/box/index",
+    "pages/screen/index",
+    "pages/power/index",
+    "pages/mouse/index",
+    "pages/keyboard/index",
+    "pages/shopcart/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#67bbc3",
+    "navigationBarTitleText": "装机小帮手",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}
