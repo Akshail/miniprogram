@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class='card'>
+  <image src="../../images/封面.png" mode="aspectFit"></image>
+  <button hover-class="none" bindtap='menuBtn'>开始装机</button>
+</view>

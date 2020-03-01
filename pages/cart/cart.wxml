@@ -1,0 +1,38 @@
+<!--pages/cpu/index.wxml-->
+<view>
+  <view class='box'>
+    <image class='photo' src='../../icons/购物车-2.png' mode='aspectFill'/>
+  </view>
+  <view wx:for="{{list}}" wx:for-index="idx" wx:for-item="itemName" wx:key="idx">
+    <view wx:if="{{itemName.gooddata.imageurl}}">
+       <view class="v1">
+      <image src='{{itemName.gooddata.imageurl}}' mode='aspectFit' class="jf"></image>
+      <view class="t1">
+        <text>{{itemName.gooddata.goodname}}</text>
+        <text class='price'>¥ {{itemName.gooddata.price}} </text>
+      </view>
+      <image bindtap='handle' src='../../icons/carticon/{{itemName.id}}.png' mode='aspectFit' class="jf3" data-bean="{{itemName}}"/>
+      <image bindtap='handle' src='../../icons/rechoose-2.png' mode='aspectFit' class="jf4"/>
+    </view>
+    </view> 
+    <view wx:elif="!{{itemName.gooddata.imageurl}}">
+      <view class="v1">
+        <image bindtap='handle' src='../../icons/cart-l.png' mode='aspectFit' class="jf2"/>
+        <image bindtap='handle' src='../../icons/carticon/{{itemName.id}}.png' mode='aspectFit' class="jf3" data-bean="{{itemName}}"/>
+        <image bindtap='handle' src='../../icons/cart-r.png' mode='aspectFit' class="jf2"/>
+       </view>
+      </view>
+</view>
+   
+    <view class="buy_box">
+    <view class="collect_bottom">
+      <view class="collect_right">
+        <text class="collect_two">总价¥ 11111</text>
+      </view>
+    </view>
+    <view class="buy_btn">
+      <text>马上购买</text>
+    </view>
+  </view>
+
+</view>

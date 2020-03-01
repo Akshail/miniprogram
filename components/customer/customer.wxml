@@ -1,0 +1,5 @@
+<view class='customer' catchtouchmove="setTouchMove" style="top:{{top}}rpx;left:{{left}}rpx">
+  <button open-type='contact' class="btn"></button>
+  <button type="default" class="btn1" catchtap='phone'></button>
+  <slot></slot>
+</view>

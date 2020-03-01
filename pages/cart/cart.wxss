@@ -1,0 +1,59 @@
+/* pages/cpu/index.wxss */
+.box{
+  width: 100%;
+  height: 150rpx;
+  display:flex;
+  justify-content: center;       
+  background-color: #fff;
+}
+
+.photo{
+  margin-top: 5%;
+  width: 120rpx;
+  height: 120rpx;
+}
+
+
+
+button{
+  color:white;
+  background-color:#00b26a;
+  opacity: 0.8;
+  height: 35%;
+  width: 30%;
+  
+}
+.collect_bottom {
+  width: 100%;
+  height: 80rpx;
+  background: #fff;
+  line-height: 80rpx;
+}
+.collect_two {
+  margin-left: 20rpx;
+  font-size:32rpx;
+  color:  #393939;
+  margin-right: 20rpx;
+}
+ .collect_right {
+ margin: 0 auto;
+} 
+.buy_box {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: #fff;
+}
+.buy_btn {
+  width: 710rpx;
+  height: 88rpx;
+  background: #ffa7a7;
+  margin: 0 auto;
+  font-size: 30rpx;
+  line-height: 88rpx;
+  color: #fff;
+  align-content: center;
+  justify-content: center;
+   display: flex;
+   border-radius:5px; 
+}

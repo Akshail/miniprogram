@@ -1,0 +1,35 @@
+
+
+<!--pages/cpu/index.wxml-->
+<view>
+  <button catchtouchmove="buttonMove" catchtouchstart="buttonStart"          catchtouchend="buttonEnd" style="top:{{buttonTop}}px;left:{{buttonLeft}}px;width: 105rpx;height:105rpx;border-radius:105rpx;position:fixed;background:#67bbc3;opacity: 0.7;"><image class='iconn' mode='aspectFill' src='../../icons/购物车-1.png'></image></button>
+  <view class='box'>
+    <image class='photo' src='../../icons/内存-1.png' mode='aspectFill'/>
+  </view>
+  <view wx:for="{{memorydata}}" wx:for-index="idx" wx:for-item="itemName" wx:key="idx">
+    <view class="v1">
+      <image src='{{itemName.imageurl}}' mode='aspectFit' class="jf"></image>
+      <view class="t1">
+        <text>{{itemName.goodname}}</text>
+        <text class='price'>¥ {{itemName.price}}</text>
+      </view>
+      <view class="t2">
+       <text>内存容量:{{itemName.capacity}}</text>
+        <text>内存类型:{{itemName.kind}}</text>
+        <text>主频:{{itemName.hz}}</text>
+      </view>
+      <view class="jf2">
+        <view wx:if="{{!itemName.selectnum}}">
+          <image bindtap='handle' src='../../icons/plus.png' mode='aspectFill' class='jf3' data-bean="{{itemName}}"></image>
+        </view>
+        <view wx:elif="{{itemName.selectnum}}">
+          <view class='v2'>
+            <image bindtap='handle' src='../../icons/plus.png' class='jf4' data-bean="{{itemName}}"></image>
+    	      <text class='t4'>{{itemName.selectnum}}</text>
+            <image bindtap='handle' src='../../icons/plus.png' class='jf5' data-bean="{{itemName}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

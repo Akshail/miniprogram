@@ -1,0 +1,4 @@
+<!--pages/shopcart/index.wxml-->
+  <view class='box'>
+    <image class='photo' src='../../icons/购物车-1.png' mode='aspectFill'/>
+  </view>

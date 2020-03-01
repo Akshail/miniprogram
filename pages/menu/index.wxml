@@ -1,0 +1,13 @@
+<!--pages/menu/index.wxml-->
+<view>
+  <block wx:for="{{items}}" wx:key="item">
+    <view>
+      <navigator url="../{{item.epx}}/index">
+        <view class="box" index="{{index}}">
+          <image class="photo" src="{{item.imageUrl}}" mode="aspectFit"/>
+          <text class="desc">{{item.content}}</text>
+        </view>
+      </navigator>
+    </view>
+  </block>
+</view>
